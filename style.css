@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Outfit', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: hsl(212, 45%, 89%);
+}
+.container{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    height: 100%;
+    width: 22%;
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+.cardContainer{
+    height: 95%;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+}
+.qrContainer{
+    background: url(images/image-qr-code.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+    height: 65%;
+    width: 100%;
+}
+.textCont{
+    height: 35%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.textContainer{
+    height: 100%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+}
+p{
+    color: hsl(220, 15%, 55%);
+    width: 90%;
+    height: auto;
+    text-align: center;
+}
+
+@media (max-width:1441px) {
+   .card{
+    width: 30%;
+   }
+}
+
+@media (max-width:1025px) {
+    .card{
+     width: 40%;
+    }
+ }
+
+ @media (max-width:661px) {
+    .container{
+        height: 90%;
+    }
+    .card{
+     width: 50%;
+    }
+ }
+
+@media (max-width:562px) {
+    .container{
+        height: 80%;
+    }
+    .card{
+     width: 60%;
+    }
+    .qrContainer{
+        height: 60%;
+    }
+ }
+
+ @media (max-width:562px) {
+    .container{
+        height: 70%;
+    }
+    .card{
+     width: 70%;
+    }
+ }
+
+ @media (max-width:376px) {
+    .container{
+        height: 80%;
+    }
+    .card{
+     width: 70%;
+    }
+    .qrContainer{
+        height: 60%;
+    }
+ }
+
+ @media (max-width:320px) {
+    .container{
+        height: 70%;
+    }
+    .card{
+     width: 90%;
+    }
+    .qrContainer{
+        height: 60%;
+    }
+ }
